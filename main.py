@@ -10,7 +10,7 @@ for post_path in post_paths:
 		html = md.convert(f.read())
 		title = md.Meta['title'][0]
 		slug = slugify(title)
-		links.append('<li><a href=/pages/{slug}.html>{title}</a></li>'.format(**locals()))
+		links.append('<li><a href=pages/{slug}.html>{title}</a></li>'.format(**locals()))
 links.append('</ul>')
 
 for post_path in post_paths:
